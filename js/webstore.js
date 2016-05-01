@@ -2,7 +2,7 @@ var elonMusk = {
 	'name': 'Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future',
 	'category': 'Science & Technology',
 	'price': '$26.45',
-	'picture': 'http://ecx.images-amazon.com/images/I/51IQzkj0+NL._SL300_.jpg',
+	'picture': 'img/elon-musk.jpg',
 	'points': 'It is Elon Musk! Do I need to say more?',
 }
 
@@ -10,7 +10,7 @@ var fifthAgreement = {
 	'name': 'The Fifth Agreement: A Practical Guide to Self-Mastery',
 	'category': 'Spirtual',
 	'price': '$12.00',
-	'picture': 'https://www.amberallen.com/wp-content/uploads/2013/07/the-fifth-agreement-book-cover.jpg',
+	'picture': 'img/the-fifth-agreement.jpg',
 	'points': 'A guide to self-mastery featuring the Toltec Wisdom!',
 }
 
@@ -18,7 +18,7 @@ var alchemist = {
 	'name': 'The Alchemist',
 	'category': 'Life',
 	'price': '$6.25',
-	'picture': 'http://d.gr-assets.com/books/1287827991l/865.jpg',
+	'picture': 'img/the-alchemist.jpg',
 	'points': 'A book about finding the beauty of life.'
 }
 
@@ -34,10 +34,10 @@ $('#elonMusk .price').append(elonMusk.price);
 $('#fifthAgreement .price').append(fifthAgreement.price);
 $('#alchemist .price').append(alchemist.price);
 
-$('#elonMusk .img').append(elonMusk.picutre);
-$('#fifthAgreement .img').append(fifthAgreement.picture);
-$('#alchemist .img').append(alchemist.picture);
+$('#elonMusk .img').append('<img src="' + elonMusk.picture + '" class="img-responsive">');
+$('#fifthAgreement .img').append('<img src="' + fifthAgreement.picture + '" class="img-responsive">');
+$('#alchemist .img').append('<img src="' + alchemist.picture + '" class="img-responsive">');
 
-$('#elonMusk .img').append(elonMusk.picutre);
-$('#fifthAgreement .img').append(fifthAgreement.picture);
-$('#alchemist .img').append(alchemist.picture);
+$('#elonMusk .points').append(elonMusk.points);
+$('#fifthAgreement .points').append(fifthAgreement.points);
+$('#alchemist .points').append(alchemist.points);
